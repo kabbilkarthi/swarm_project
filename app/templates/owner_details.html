@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabbil | AboutMe</title>
+    <style>
+
+        body {
+                font-family: consolas;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+                background-color: #f9f9f9;
+                color: #333;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        #banner {
+            width: 100%;    
+            height: 300px;
+            object-fit: cover;
+        }
+        .btn-container {
+            text-align: center; /* centers the button */
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .submit-container {
+            text-align: center;
+        }
+        footer {
+                text-align: center;
+                padding: 15px;
+                background: #222;
+                color: white;
+                margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img id="banner" src="/static/banner.jpg" alt="Banner Image">
+<section>    
+    <h2>About Me</h2>
+    <p>
+        I started out as a Mechanical Engineer, but life had other plans — and tech quickly became my true calling.  
+    </p>
+    <p>
+        I’m <b>Kabbil</b>, a curious mind who loves solving problems and pushing boundaries.  
+        Over time, I’ve specialized in <b>Linux Administration</b> and grown into the world of <b>Site Reliability Engineering (SRE)</b> and <b>DevOps</b>.  
+    </p>
+    <p>
+        Alongside scripting in <b>Python</b> and <b>Bash</b>, I work with <b>Docker</b>, <b>Kubernetes</b>, and automation tools like <b>Ansible</b>.  
+        I’m also exploring <b>CI/CD pipelines</b>, monitoring, and infrastructure as code to build scalable and reliable systems.  
+    </p>
+    <p>
+        For me, technology isn’t just about uptime — it’s about creating systems that are resilient, automated, and efficient.  
+    </p>
+    <p>
+        Always exploring, always learning — and if you’d like to connect, please reach out to me on  
+        <a href="https://www.linkedin.com/in/kabbil" target="_blank"><b>LinkedIn</b></a> or mail me at  
+        <b>g.i.kabbil@gmail.com</b>
+    </p>
+</section>
+
+</section>    
+
+<section>  
+    <form action="/handle_choice" method="POST">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <h2 style="margin: 0;">Please share your details:</h2>
+            
+            <label>
+                <input type="radio" id="yes" name="choice" value="yes" required>
+                Yes
+            </label>
+            
+            <label>
+                <input type="radio" id="no" name="choice" value="no" required>
+                No
+            </label>
+        </div>
+
+        <div class="submit-container" style="margin-top: 20px;">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</section>
+    <div class="btn-container">
+        <a href="/" class="btn">Go back to home</a>
+    </div>
+    <footer>
+            <p>© 2025 Kabbil | Built with Flask & MySQL</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bye</title>
+    <style>
+        body {
+            font-family: consolas;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+
+            /* make page fill full height */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1; /* take remaining space so footer goes to bottom */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Thank you for submitting your details!</h2>
+        <a href="/" class="btn">Go back to home</a>
+    </main>
+
+    <footer>
+        <p>© 2025 Kabbil | Built with Flask & MySQL</p>
+    </footer>
+</body>
+</html>

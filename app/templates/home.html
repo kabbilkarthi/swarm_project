@@ -1,0 +1,114 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kabbil | Portfolio</title>   
+        <style>
+            body {
+                font-family: consolas;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+            header {
+                text-align: center;
+                background: #222;
+                color: white;
+                padding: 10px;
+            }
+            /* header h1 {
+                margin: 0;
+            } */
+            #banner {
+                width: 100%;
+                height: 300px;
+                object-fit: cover; 
+            }
+            section {
+                max-width: 900px;
+                margin: 30px auto;
+                padding: 20px;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            }
+            h2 {
+                margin-top: 0;
+                color: #444;
+            }
+            footer {
+                text-align: center;
+                padding: 15px;
+                background: #222;
+                color: white;
+                margin-top: 30px;
+            }
+            .btn {
+                display: inline-block;
+                background: #0077cc;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-top: 10px;
+            }
+            .btn:hover {
+                background: #005fa3;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- <h1>Welcome to My Portfolio</h1> -->
+            <p>Hi, I'm <b>Kabbil</b> — IT Enthusiast & (SRE) Linux Admin</p>
+        </header>
+
+        <img id="banner" src="/static/banner.jpg" alt="Banner Image">
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I'm passionate about technology, coding, and building impactful projects.  
+                This website showcases my projects, certifications, and some fun facts.  
+            </p>
+            <a class="btn" href="/owner_details">Know More</a>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <p>Check out some of the projects I’ve worked on so far.</p>
+            <a class="btn" href="/project_details">View Projects</a>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <p>Check out some of the certifications I’ve passed and having good hands on experience.</p>
+            <a class="btn" href="/certification_details">View Certifications</a>
+        </section>
+
+        <section>
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>🕵️ I love to debug — breaking things just to fix them again</li>
+                <li>⌨️ My keyboard is louder than my thoughts 😅</li>
+                <li>🛠️ I enjoy exploring new tools and technologies every month</li>
+                <li>🐧 Linux is my third language, alongside Tamil and English</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <ul style="list-style: none; padding: 0; font-size: 18px;">
+                <li>💼 <a href="https://www.linkedin.com/in/kabbil" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+
+
+        <footer>
+            <p>© 2025 Kabbil | Built with Flask & MySQL</p>
+        </footer>
+    </body>
+    </html>
